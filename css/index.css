@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css"> .nanumsquare { font-family: 'NanumSquare', sans-serif !important; }
+
+
 /*COMMON*/
 *{
     padding: 0;
@@ -69,7 +71,7 @@ div.header_bottom nav ul.sub_menu li{ width: 100%; height: 30px; text-align: cen
 div.header_bottom nav ul.sub_menu li a{ width: 100%; color: #666; font-size: 14px; text-align: center; }
 div.header_bottom nav ul.sub_menu li a:hover{ color: black; }
 
-/*header_bottom_navigation 호버 이벤트*/
+/*header_bottom_navigation  호버 이벤트*/
 div.header_bottom nav:hover:after{ height: 350px; border-bottom: 3px solid #0d4633;}
 div.header_bottom nav:hover ul.sub_menu{ display: block;}
 div.header_bottom nav ul.main_menu>li:hover a::after{ width: 100%; }
@@ -148,8 +150,8 @@ section#notice article div a p:last-child{
     font-weight: 600;
     letter-spacing: 5px;
 }
-.card-swiper-container .swiper-pagination-bullets{ width: 120px !important; border-radius: 11px; background-color: rgb(0,0,0,0.3); left: 50% !important; transform: translate(-50%, 0) !important}
-.card-swiper-container .swiper-pagination-bullet-active{ background-color: white !important; }
+.card-swiper-container .swiper-pagination-bullets{ width: 120px ; border-radius: 11px; background-color: rgb(0,0,0,0.3); left: 50% ; transform: translate(-50%, 0) }
+.card-swiper-container .swiper-pagination-bullet-active{ background-color: white ; }
 
 
 /*NEW_MENU*/
@@ -304,8 +306,14 @@ section#event{ width: 100%; height: auto; padding: 20px 0; }
 section#event article{ width: 100%; height: auto; }
 section#event article div img{ width: 100%; }
 
-.swiper-pagination-bullets{ width: 80px !important; border-radius: 11px; background-color: rgb(0,0,0,0.3); left: 50% !important; transform: translate(-50%, 0) !important}
-.swiper-pagination-bullet-active{ background-color: white !important; }
+section#event .swiper-pagination-bullets{ width: auto; height: 20px;  border-radius: 12px; left: 20% ; bottom: 15px; margin-left: 22px; }
+section#event .swiper-pagination-bullet{ width: 10px; height: 10px; margin-top: 5px; }
+section#event .swiper-pagination-bullet-active{ background-color: white ; }
+
+section#event .swiper-button-prev{ width: 22px ; height: 20px; top: auto; bottom:15px; left: 20%;  }
+section#event .swiper-button-prev::after{ content: ' '; width: 22px ; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -33px -70px ; background-size: 800px auto; }
+section#event .swiper-button-next{ width: 22px; height: 20px; top: auto; bottom:15px; left: 20% ; margin-left: 66px; right: auto ; }
+section#event .swiper-button-next::after{ content: ' '; width: 22px; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -68px -70px ; background-size: 800px auto; }
 
 /*STORE & FRANCHISE*/
 section#store{

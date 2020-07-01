@@ -68,6 +68,7 @@ $(document).ready(function(){
     var swiper = new Swiper('.event-swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
+      loop : true,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
@@ -76,12 +77,10 @@ $(document).ready(function(){
         el: '.swiper-pagination',
         clickable: true,
       },
-      /*
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      */
     });
     
     
