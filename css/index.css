@@ -247,9 +247,32 @@ section#new_menu dl dt a.new_menu_more{
     display: inline-block;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: 2px;
-    
+    letter-spacing: 5px;
 }
+section#new_menu dl dt div.new-slide-navigation{
+    width: 130px; height: 30px;
+    padding-left: 10px;
+    position: relative;
+}
+section#new_menu dl dt div.new-swiper-button-prev::after{
+    content: ' ';
+    width: 25px; height: 20px;
+    background: url(../img/common.png) top left no-repeat;
+    background-position: -160px -15px;
+}
+section#new_menu dl dt div.new-swiper-button-next::after{
+    content: ' ';
+    width: 25px; height: 20px;
+    background: url(../img/common.png) top left no-repeat;
+    background-position: -189px -15px;
+}
+section#new_menu dl dt div.new-swiper-pagination{
+    bottom: 50%;
+    transform: translate(0, 50%);
+    font-size: 18px;
+    font-weight: 600;
+}
+
 
 section#new_menu dl dd{
     width: 75%;; height: 100%;

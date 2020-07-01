@@ -47,12 +47,12 @@ $(document).ready(function(){
           spaceBetween: 30,
           loop : true,
           pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+            el: '.new-swiper-pagination',
+            type: 'fraction',
           },
             navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.new-swiper-button-next',
+            prevEl: '.new-swiper-button-prev',
           },
         });
     
@@ -78,8 +78,8 @@ $(document).ready(function(){
         clickable: true,
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.event-swiper-button-next',
+        prevEl: '.event-swiper-button-prev',
       },
     });
     
