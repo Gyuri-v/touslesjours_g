@@ -50,30 +50,35 @@ div.header_bottom h1 a{ width: auto; height: 30px; }
 div.header_bottom h1 a img{ width: auto; height: 30px; }
 
 /*header_bottom_navigation*/
-div.header_bottom nav{ width: auto; float: right; margin-top: 25px; }
+div.header_bottom nav{ width: auto; float: right; margin-top: 25px; margin-bottom: 25px; }
+div.header_bottom nav::after{ content: ' '; width: 100%; height: 0; background-color: white; position: fixed; top: 80px; left: 0; z-index: -1; }
 
-/*main_menu*/
+/*header_bottom_navigation main_menu*/
+div.header_bottom nav ul.main_menu{ width: 100%; height: 30px;}
+
 div.header_bottom nav ul.main_menu>li{ width: auto; height: 30px; float: left; padding: 0 40px; position: relative; }
 div.header_bottom nav ul.main_menu>li:last-child{ margin-right: 40px; }
-div.header_bottom nav ul.main_menu>li>a{ width: auto; height: 30px; position: relative; }
-div.header_bottom nav ul.main_menu>li>a::after{ content: ' '; width: 0; height: 5px; background-color: #0d4633; position: absolute; bottom: -10px; left: 0; transition-timing-function: ease-in-out; transition-duration: 0.2s; }
+div.header_bottom nav ul.main_menu>li>a{ width: auto; height: 30px; display: inline-block; position: relative; }
+div.header_bottom nav ul.main_menu>li>a::after{ content: ' '; width: 0; height: 5px; background-color: #0d4633; position: absolute; bottom: 0px; left: 0; transition-timing-function: ease-in-out; transition-duration: 0.2s; }
 
 
-            /* ↓↓↓↓js로 빼기 */
-ul.sub_menu::after{ content: ' '; width: 100%; height: 330px; background-color: white; border-bottom: 3px solid #0d4633; position: fixed; top: 80px; left: 0; z-index: -1; }
+
+/*header_bottom_navigation sub_menu*/
+div.header_bottom nav ul.sub_menu{ width: 100%; padding-top: 40px; display: none; position: absolute; top: 0; left: 0; }
+div.header_bottom nav ul.sub_menu li{ width: 100%; height: 30px; text-align: center; }
+div.header_bottom nav ul.sub_menu li a{ width: 100%; color: #666; font-size: 14px; text-align: center; }
+div.header_bottom nav ul.sub_menu li a:hover{ color: black; }
+
+/*header_bottom_navigation 호버 이벤트*/
+div.header_bottom nav:hover:after{ height: 350px; border-bottom: 3px solid #0d4633;}
+div.header_bottom nav:hover ul.sub_menu{ display: block;}
 div.header_bottom nav ul.main_menu>li:hover a::after{ width: 100%; }
-
-/*sub_menu*/
-div.header_bottom nav ul.main_menu>li ul.sub_menu{ width: 100%; display: none; position: absolute; top: 40px; left: 0; }
-div.header_bottom nav ul.main_menu>li ul.sub_menu li{ width: 100%; height: 30px; text-align: center; }
-div.header_bottom nav ul.main_menu>li ul.sub_menu li a{ width: 100%; color: #666; font-size: 14px; text-align: center; }
-div.header_bottom nav ul.main_menu>li ul.sub_menu li a:hover{ color: black; }
 
 
 /*header_fixed -- 스크롤 이벤트*/
 div.header_fixed{ height: 80px; background-color: white; position: fixed; z-index: 999999; }
 div.header_fixed div.header_top{ display: none; }
-div.header_fixed div.header_bottom ul li ul.sub_menu::after{ height: 280px; }
+div.header_fixed div.header_bottom nav:hover:after{ height: 280px; border-bottom: 3px solid #0d4633;}
 
 
 

@@ -11,15 +11,6 @@ $(document).ready(function(){
             $('.header_con').removeClass('header_fixed');
         }
     })
-
-    //header 네비게이션 sub_menu
-    $('.main_menu>li').mouseenter(function(){
-        $('.sub_menu').show();
-    });
-    $('header').mouseleave(function(){
-        $('.sub_menu').hide();
-    })
-    
     
     
     //NOTICE slide
