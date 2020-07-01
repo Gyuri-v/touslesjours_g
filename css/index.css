@@ -329,14 +329,13 @@ section#event{ width: 100%; height: auto; padding: 20px 0; }
 section#event article{ width: 100%; height: auto; }
 section#event article div img{ width: 100%; }
 
-section#event .swiper-pagination-bullets{ width: auto; height: 20px;  border-radius: 12px; left: 20% ; bottom: 15px; margin-left: 22px; }
-section#event .swiper-pagination-bullet{ width: 10px; height: 10px; margin-top: 5px; }
+section#event article div.event-slide-navigation{ width: 120px; height: 30px; margin-left: -15px; position: relative; bottom: 50px; left: 20%; z-index: 999;}
+section#event .swiper-pagination-bullets{ width: 120px ; height: 30px;}
+section#event .swiper-pagination-bullet{ width: 12px; height: 12px; margin-top: 9px; margin-right: 10px; }
 section#event .swiper-pagination-bullet-active{ background-color: white ; }
 
-section#event .swiper-button-prev{ width: 22px ; height: 20px; top: auto; bottom:15px; left: 20%;  }
-section#event .swiper-button-prev::after{ content: ' '; width: 22px ; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -33px -70px ; background-size: 800px auto; }
-section#event .swiper-button-next{ width: 22px; height: 20px; top: auto; bottom:15px; left: 20% ; margin-left: 66px; right: auto ; }
-section#event .swiper-button-next::after{ content: ' '; width: 22px; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -68px -70px ; background-size: 800px auto; }
+section#event .event-swiper-button-prev::after{ content: ' '; width: 22px ; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -33px -70px ; background-size: 800px auto; }
+section#event .event-swiper-button-next::after{ content: ' '; width: 22px; height: 14px; margin: 3px 0; background: url(../img/common.png) no-repeat; background-position: -68px -70px ; background-size: 800px auto; }
 
 /*STORE & FRANCHISE*/
 section#store{
