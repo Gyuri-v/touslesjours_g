@@ -1,4 +1,27 @@
 $(document).ready(function(){
+    //AOS 
+    AOS.init();
+    
+    //PIXELCOG
+//    $('.parallax-window').parallax({imageSrc: 'img/main_mall/mall_back.jpg'});
+    
+    //NICE SELECT
+    $('select').niceSelect();
+    
+    //text effet
+    $(window).scroll(function(){
+//        alert($(this).scrollTop());
+        
+        sc_t = $('.main_notice').offset().top - 300;
+        sc_h = $(this).scrollTop();
+        
+        if( sc_h >= sc_t ){
+            $('.tit').addClass('on').fitText(0.5).textillate({ in: {  effect: 'flipInY',  delay: 200  }});
+        }
+    })
+    
+    
+    
     
     
     //header 네비게이션 스크롤  
@@ -12,9 +35,40 @@ $(document).ready(function(){
         }
     })
     
+    //header 네비게이션 호버시 sub_menu 생성
+    $('.main_menu > li').hover(function(){
+        $('.menu_bg').stop().animate({height:'380px'},300).addClass('on');
+        $('.sub_menu').stop().animate({height:'380px'},300);
+    },function(){
+        $('.menu_bg').stop().animate({height:'0'},300).addClass('on');
+        $('.sub_menu').stop().animate({height:'0'},300);
+    })
+    
+    
+    
+    
+    //VISUAL slide
+    var swiper = new Swiper('.visual.swiper-container', {
+      loop : true,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.visual .swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.visual .swiper-button-next',
+        prevEl: '.visual .swiper-button-prev',
+      },
+    });
+    
+    
+    
     
     //NOTICE slide
-    var swiper = new Swiper('.notice-swiper-container', {
+    var swiper = new Swiper('.notice .swiper-container', {
       direction: 'vertical',
       loop : true,
       autoplay: {
@@ -23,49 +77,111 @@ $(document).ready(function(){
       },
     });
     
-    //NOTICE CARE toggle
-    $('.notice_line_con_right>a').click(function(){
-        $('.notice_card').slideToggle();
+    //NOTICE CARD_CON toggle
+    $('.card .inner a').click(function(){
+        $('.card_con').stop().slideToggle();
         
         
     //NOTICE CARD slide
-        var swiper = new Swiper('.card-swiper-container', {
+        var swiper = new Swiper('.card_con .swiper-container', {
           slidesPerView: 3,
           spaceBetween: 30,
           loop : true,
           pagination: {
-            el: '.swiper-pagination',
+            el: '.card_con .swiper-pagination',
             clickable: true,
+          },
+          navigation: {
+            nextEl: '.card_con .swiper-button-next',
+            prevEl: '.card_con .swiper-button-prev',
           },
         });
         
-    })
+    })    
     
-    //NEW MENU slide
-    var swiper = new Swiper('.new-swiper-container', {
+    
+    
+    
+    
+    //NEW MENU slide 
+    var swiper = new Swiper('.new .swiper-container.new_slide1', {
           slidesPerView: 1.5,
           spaceBetween: 30,
           loop : true,
           pagination: {
-            el: '.new-swiper-pagination',
+            el: '.slide1_nav .swiper-pagination',
             type: 'fraction',
           },
             navigation: {
-            nextEl: '.new-swiper-button-next',
-            prevEl: '.new-swiper-button-prev',
+            nextEl: '.slide1_nav .swiper-button-next',
+            prevEl: '.slide1_nav .swiper-button-prev',
           },
+          observer: true,
+          observeParents: true,
+        });
+    var swiper = new Swiper('.new .swiper-container.new_slide2', {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+          loop : true,
+          pagination: {
+            el: '.slide2_nav .swiper-pagination',
+            type: 'fraction',
+          },
+            navigation: {
+            nextEl: '.slide2_nav .swiper-button-next',
+            prevEl: '.slide2_nav .swiper-button-prev',
+          },
+          observer: true,
+          observeParents: true,
+        });
+    var swiper = new Swiper('.new .swiper-container.new_slide3', {
+          slidesPerView: 1.5,
+          spaceBetween: 30,
+          loop : true,
+          pagination: {
+            el: '.slide3_nav .swiper-pagination',
+            type: 'fraction',
+          },
+            navigation: {
+            nextEl: '.slide3_nav .swiper-button-next',
+            prevEl: '.slide3_nav .swiper-button-prev',
+          },
+          observer: true,
+          observeParents: true,
         });
     
-    //NEW MENU CONTROL
+    
+    //NEW MENU CONTROL toggle
     $('.new_slide_label').click(function(){
         $('.new_slide_type').slideToggle();
-    })
+    });
+    
+    
+    //NEW MENU CONTROL slide_type 선택
+    $('.new_slide_type a').click(function(){
+        $('.new_slide_type').slideUp();
+        
+        //버튼 글씨
+        $('.new_slide_label button').text($(this).text());
+        
+        idx = $(this).index() + 1;
+        //슬라이드
+        $('.new_slide1, .new_slide2, .new_slide3').removeClass('on');
+        $('.new_slide' + idx).addClass('on');
+        
+        //네비게이션
+        $('.slide1_nav, .slide2_nav, .slide3_nav').removeClass('on');
+        $('.slide' + idx + '_nav').addClass('on');
+        
+        //배너
+        $('.new_slide_banner>img').attr('src','img/main_new/slide' + idx + '_banner.jpg')
+    });
 
     
     
     //EVENT slide
     
-    var swiper = new Swiper('.event-swiper-container', {
+    var swiper = new Swiper('.event .swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
       loop : true,
@@ -74,19 +190,21 @@ $(document).ready(function(){
         disableOnInteraction: false,
       },
       pagination: {
-        el: '.swiper-pagination',
+        el: '.event .swiper-pagination',
         clickable: true,
       },
       navigation: {
-        nextEl: '.event-swiper-button-next',
-        prevEl: '.event-swiper-button-prev',
+        nextEl: '.event .swiper-button-next',
+        prevEl: '.event .swiper-button-prev',
       },
     });
     
     
-    //footer family site
-    $('.footer_familysite_label').click(function(){
-        $('.footer_familysite_link').slideToggle();
-    })
+    //SNS hover이벤트
+//    $('.sns_con').find('a').hover(function(){
+//        $(this).addClass('on');
+//    }, function(){
+//        $(this).removeClass('on');
+//    })
     
 })
