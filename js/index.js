@@ -174,7 +174,7 @@ $(document).ready(function(){
         $('.slide' + idx + '_nav').addClass('on');
         
         //배너
-        $('.new_slide_banner>img').attr('src','img/main_new/slide' + idx + '_banner.jpg')
+        $('.new_slide_banner>img').attr('src','img/banner/bn_new_slide' + idx + '.jpg')
     });
 
     
