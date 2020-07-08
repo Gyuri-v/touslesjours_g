@@ -2,16 +2,11 @@ $(document).ready(function(){
     //AOS 
     AOS.init();
     
-    //PIXELCOG
-//    $('.parallax-window').parallax({imageSrc: 'img/main_mall/mall_back.jpg'});
-    
     //NICE SELECT
     $('select').niceSelect();
     
     //text effet
     $(window).scroll(function(){
-//        alert($(this).scrollTop());
-        
         sc_t = $('.main_notice').offset().top - 300;
         sc_h = $(this).scrollTop();
         
@@ -104,7 +99,7 @@ $(document).ready(function(){
     
     
     //NEW MENU slide 
-    var swiper = new Swiper('.new .swiper-container.new_slide1', {
+    var swiper = new Swiper('.main_new .swiper-container.new_slide1', {
           slidesPerView: 1.5,
           spaceBetween: 30,
           loop : true,
@@ -119,7 +114,7 @@ $(document).ready(function(){
           observer: true,
           observeParents: true,
         });
-    var swiper = new Swiper('.new .swiper-container.new_slide2', {
+    var swiper = new Swiper('.main_new .swiper-container.new_slide2', {
           slidesPerView: 1.5,
           spaceBetween: 30,
           loop : true,
@@ -134,7 +129,7 @@ $(document).ready(function(){
           observer: true,
           observeParents: true,
         });
-    var swiper = new Swiper('.new .swiper-container.new_slide3', {
+    var swiper = new Swiper('.main_new .swiper-container.new_slide3', {
           slidesPerView: 1.5,
           spaceBetween: 30,
           loop : true,
@@ -181,7 +176,7 @@ $(document).ready(function(){
     
     //EVENT slide
     
-    var swiper = new Swiper('.event .swiper-container', {
+    var swiper = new Swiper('.main_event .swiper-container', {
       spaceBetween: 30,
       centeredSlides: true,
       loop : true,
@@ -190,21 +185,14 @@ $(document).ready(function(){
         disableOnInteraction: false,
       },
       pagination: {
-        el: '.event .swiper-pagination',
+        el: '.main_event .swiper-pagination',
         clickable: true,
       },
       navigation: {
-        nextEl: '.event .swiper-button-next',
-        prevEl: '.event .swiper-button-prev',
+        nextEl: '.main_event .swiper-button-next',
+        prevEl: '.main_event .swiper-button-prev',
       },
     });
-    
-    
-    //SNS hover이벤트
-//    $('.sns_con').find('a').hover(function(){
-//        $(this).addClass('on');
-//    }, function(){
-//        $(this).removeClass('on');
-//    })
+
     
 })
