@@ -173,8 +173,9 @@ input {
 .card_con .swiper-slide a{ display: block; padding: 50px 30px; box-sizing: border-box;}
 .card_con .swiper-slide a img{ width: 180px; display: block; margin: 0 auto;}
 .card_con .swiper-slide a h4{ margin-top: 20px; font-size: 18px; font-weight: 800; text-align: center; line-height: 50px;}
-.card_con .swiper-slide a p{ font-size: 14px; text-align: center; line-height: 24px;}
+.card_con .swiper-slide a p{ font-size: 14px; text-align: center; line-height: 24px; transition: 0.5s;}
 .card_con .swiper-slide a p:last-child{margin-top: 20px;font-size: 16px;font-weight: 600;letter-spacing: 5px;}
+.card_con .swiper-slide a p:hover{ margin-left: 25px; }
 
 /*.card_con .swiper-pagination-bullets{ width: 120px ; height: 30px;}*/
 .card_con .slide-nav{ width: 210px; height: 30px; margin: auto; position: relative; bottom: 10px;}
@@ -207,7 +208,8 @@ input {
 .main_new dl dt .new_slide_banner{width: 255px; height: 90px; padding: 0 10px; overflow: hidden;}
 .main_new dl dt .new_slide_banner img{width: 100%;}
 
-.main_new dl dt .new_menu_more{padding: 30px 10px;display: inline-block;font-size: 18px;font-weight: 600;letter-spacing: 5px;}
+.main_new dl dt .new_menu_more{padding: 30px 10px;display: inline-block;font-size: 18px;font-weight: 600;letter-spacing: 5px; transition: 0.5s;}
+.main_new dl dt .new_menu_more:hover{margin-left: 25px;}
 
 .main_new dl dt .new-slide-navigation{width: 130px; height: 30px;padding-left: 10px;position: relative;}
 .main_new dl dt .slide1_nav, .slide2_nav, .slide3_nav{ display: none; }
@@ -270,7 +272,8 @@ input {
 .section_title h4::after{content: ' ';width: 70px; height: 1px;background-color: #fff;position: absolute;bottom: 0; left: 50%;transform: translate(-50%, 0);}
 .section_title p{color: white;font-size: 16px;font-weight: 400;text-align: center;line-height: 80px;}
 .section_title div{width: 250px; height: 40px;padding-bottom: 20px;margin: auto;}
-.section_title div a{display: block;color: white;text-align: center;line-height: 40px;letter-spacing: 5px;}
+.section_title div a{display: block;color: white;text-align: center;line-height: 40px;letter-spacing: 5px; transition: 0.5s;}
+.section_title div a:hover{ margin-left: 25px;}
 .section_title div input{width: 210px; height: 40px;float: left;text-indent: 25px; border: 0; }
 .section_title div button{width: 40px; height: 40px;float: left;background-color: #0d4633;cursor: pointer; border: 0;}
 .section_title div button::after{content: ' ';width: 25px; height: 25px;display: block;margin: 0 auto;background: url(../img/icon/btn_search.svg) no-repeat; background-size: 15px;  background-position: center}
@@ -335,6 +338,8 @@ input {
 .footer_widjets .footer_familysite{width: 200px; margin-top: 20px;}
 .footer_widjets .footer_familysite .nice-select{ width: 200px; background-color: #454a56;font-size: 14px;letter-spacing: 2px;}
 .footer_widjets .footer_familysite .nice-select span{color: #fff; }
+.footer_widjets .footer_familysite .nice-select:after {-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);}
+.footer_widjets .footer_familysite .nice-select.open:after {-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
 .footer_widjets .footer_familysite .list{ width: 200px;  top: auto; bottom: 100%;}
 
 
