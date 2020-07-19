@@ -157,7 +157,7 @@ input {
 .notice .inner{ width: 600px; float: right; padding-top: 25px; box-sizing: border-box; position: relative;}
 .notice .inner h2{ width: 70px; display: block; float: left; color: white; font-size: 16px; font-weight: 600;}
 .notice .inner .swiper-container{ width: 420px; height: 20px; float: left;}
-.notice .inner .swiper-container .swiper-slide a{ width: 100%; display: block;  color: white; font-size: 14px; }
+.notice .inner .swiper-container .swiper-slide a{ width: 100%; display: block;  color: white; font-size: 14px; line-height: 20px; }
 .notice .inner .swiper-container .swiper-slide a:hover{ text-decoration: underline;}
 
 .card{ width: 50%; height: 65px; background-color: #f5f4ef; float: left;}
@@ -303,12 +303,14 @@ input {
 .main_sns .sns_con ul li a img{width: 100%; transition: transform 0.5s;position: absolute;top: 0;left: 0;border:0;}
 .main_sns .sns_con ul li a .txt_wrap{ width: 100%; height: 30%; background-color: #0d4633; padding: 10px; box-sizing: border-box; position: absolute; bottom: -100px; left: 0;transition: bottom 0.5s;}
 .main_sns .sns_con ul li a .txt_wrap p{ color: #fff; font-size: 14px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; line-height: 24px;text-align: center; font-family: '';}
+.main_sns .sns_con ul li a i{ width: 18px;height: 0;background: url(../img/icon/common.png) top left no-repeat;background-position: -80px -17px;position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); }
 
 .main_sns .sns_con ul li a:after{content:"";border:1px solid none;width: 100%; height: 100%;display: block;position: absolute;top: 0;left: 0;box-sizing: border-box;transition: 0.3s ease-in-out;-moz-transition: 0.3s ease-in-out;-ms-transition: 0.3s ease-in-out;-o-transition: 0.3s ease-in-out;}
 .main_sns .sns_con ul li a:hover{ box-sizing: border-box;}
 .main_sns .sns_con ul li a:hover:after{border:5px solid #0f4633;}
 .main_sns .sns_con ul li a:hover img{ transform: scale(1.1); filter: brightness(70%);}
 .main_sns .sns_con ul li a:hover .txt_wrap{ bottom: 0;}
+.main_sns .sns_con ul li a:hover i{ height: 20px; }
 
 
 
