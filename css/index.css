@@ -155,7 +155,7 @@ input {
 
 .notice{ width: 50%; height: 65px; background-color: #0d4633; float: left; }
 .notice .inner{ width: 600px; float: right; padding-top: 25px; box-sizing: border-box; position: relative;}
-.notice .inner h2{ width: 70px; display: block; float: left; color: white; font-size: 16px; font-weight: 600;}
+.notice .inner strong{ width: 70px; display: block; float: left; color: white; font-size: 16px; font-weight: 600; line-height: 20px;}
 .notice .inner .swiper-container{ width: 420px; height: 20px; float: left;}
 .notice .inner .swiper-container .swiper-slide a{ width: 100%; display: block;  color: white; font-size: 14px; line-height: 20px; }
 .notice .inner .swiper-container .swiper-slide a:hover{ text-decoration: underline;}
@@ -172,7 +172,7 @@ input {
 .card_con .swiper-container{ width: 1200px; margin: auto; }
 .card_con .swiper-slide a{ display: block; padding: 50px 30px; box-sizing: border-box;}
 .card_con .swiper-slide a img{ width: 180px; display: block; margin: 0 auto;}
-.card_con .swiper-slide a h4{ margin-top: 20px; font-size: 18px; font-weight: 800; text-align: center; line-height: 50px;}
+.card_con .swiper-slide a strong{ display: block; margin-top: 20px; font-size: 18px; font-weight: 800; text-align: center; line-height: 50px;}
 .card_con .swiper-slide a p{ font-size: 14px; text-align: center; line-height: 24px; transition: 0.5s;}
 .card_con .swiper-slide a p:last-child{margin-top: 20px;font-size: 16px;font-weight: 600;letter-spacing: 5px;}
 .card_con .swiper-slide a p:hover{ margin-left: 25px; }
@@ -324,7 +324,7 @@ input {
 /*footer_widjets*/
 .footer_widjets .footer_widjet{width: 25%;padding: 50px 0;float: left;}
 .footer_widjets .footer_widjet:last-child{margin-left: 25%;}
-.footer_widjets .footer_widjet h4{margin-bottom: 20px;color: white;font-size: 18px;font-weight: 800;letter-spacing: 2px;}
+.footer_widjets .footer_widjet strong{ display: block; margin-bottom: 20px;color: white;font-size: 18px;font-weight: 800;letter-spacing: 2px;}
 .footer_widjets .footer_widjet>ul>li{margin-bottom: 15px;}
 .footer_widjets .footer_widjet>ul>li>a{color: white;font-size: 14px;}
 

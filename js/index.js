@@ -5,19 +5,6 @@ $(document).ready(function(){
     //NICE SELECT
     $('select').niceSelect();
     
-    //text effet
-    $(window).scroll(function(){
-        sc_t = $('.main_notice').offset().top - 300;
-        sc_h = $(this).scrollTop();
-        
-        if( sc_h >= sc_t ){
-            $('.tit').addClass('on').fitText(0.5).textillate({ in: {  effect: 'flipInY',  delay: 200  }});
-        }
-    })
-    
-    
-    
-    
     
     //header 네비게이션 스크롤  
     var navOffset = $('.header_con').offset();
@@ -171,6 +158,16 @@ $(document).ready(function(){
         //배너
         $('.new_slide_banner>img').attr('src','img/banner/bn_new_slide' + idx + '.jpg')
     });
+    
+    //NEW MENU text effet
+    $(window).scroll(function(){
+        sc_t = $('.main_notice').offset().top - 300;
+        sc_h = $(this).scrollTop();
+        
+        if( sc_h >= sc_t ){
+            $('.tit').addClass('on').fitText(0.5).textillate({ in: {  effect: 'flipInY',  delay: 200  }});
+        }
+    })
 
     
     
