@@ -36,6 +36,7 @@ body {
     min-width: 1200px;
 	line-height: 1;
     font-family: 'Roboto','Noto Sans KR', serif;
+    word-break: keep-all;
 }
 ol, ul {
 	list-style: none;
@@ -189,7 +190,7 @@ input {
 
 /*NEW_MENU*/
 .main_new{ width: 100%; padding: 50px 0; background-color: white; clear: both; }
-.main_new .inner{width: 100%; padding-left: 200px; box-sizing: border-box; position: relative;}
+.main_new .inner{width: 1200px; margin: auto; box-sizing: border-box; position: relative;}
 
 .main_new h3{color: #999; font-size: 95px !important; font-weight: 500; text-align: center; letter-spacing: 1px; position: absolute; top: 70px; left: 55%; transform: translate(-50%, 0); opacity: 0; font-family: 'Roboto', sans-serif; }
 .main_new h3.on { opacity: 0.5;}
@@ -231,7 +232,7 @@ input {
 .main_new dl dd .swiper-slide a .new_slide_txt span{margin-left: 5px;padding: 3px;display: inline-block;background-color: #0d4633;color: white;font-size: 18px;font-weight: 600;letter-spacing: 2px;}
 .main_new dl dd .swiper-slide a .new_slide_txt span.bread{background-color: #cd8440;}
 .main_new dl dd .swiper-slide a .new_slide_txt span.drink{background-color: #ffd774;}
-.main_new dl dd .swiper-slide a .new_slide_txt p{margin-top: 10px;padding: 5px;font-size: 18px;font-weight: 800;}
+.main_new dl dd .swiper-slide a .new_slide_txt p{margin-top: 10px;padding: 5px;font-size: 18px;font-weight: 800; line-height: }
 
 .main_new dl dd .container_right_wrap{width: 300px; height: 100%; background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 30%); opacity: 0.8; position: absolute; top: 0; right: 0; z-index: 999;}
 
@@ -318,7 +319,7 @@ input {
 
 
 /*FOOTER*/
-.footer_con{width: 100%; height: 370px;background-color: #454a56;}
+.footer_con{width: 100%; height: 370px;background-color: #444;}
 .footer_con .inner{ width: 1200px; margin: auto;}
 
 /*footer_widjets*/
@@ -336,7 +337,7 @@ input {
 
 
 .footer_widjets .footer_familysite{width: 200px; margin-top: 20px;}
-.footer_widjets .footer_familysite .nice-select{ width: 200px; background-color: #454a56;font-size: 14px;letter-spacing: 2px;}
+.footer_widjets .footer_familysite .nice-select{ width: 200px; background-color: #444;font-size: 14px;letter-spacing: 2px;}
 .footer_widjets .footer_familysite .nice-select span{color: #fff; }
 .footer_widjets .footer_familysite .nice-select:after {-webkit-transform: rotate(-135deg);-ms-transform: rotate(-135deg);transform: rotate(-135deg);}
 .footer_widjets .footer_familysite .nice-select.open:after {-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);transform: rotate(45deg);}
